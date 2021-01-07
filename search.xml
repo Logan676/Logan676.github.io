@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo如何在线可视化写博客</title>
+    <url>/2021/01/06/Hexo%E5%A6%82%E4%BD%95%E5%9C%A8%E7%BA%BF%E5%8F%AF%E8%A7%86%E5%8C%96%E5%86%99%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>可以试试这款插件<code>hexo-admin</code><br>能够管理文章，添加分类和标签，也可以一键部署到pages现在图片可以实现粘贴上传，原插件为保存到<code>source/images</code>目录下,部署博客时同时上传。<br>我已修改上传图片到七牛,请参考<a href="%E6%A0%B9%E6%8D%AEhexo-admin@2.1.0%E8%BF%9B%E8%A1%8C%E4%BF%AE%E6%94%B9%EF%BC%8C%E6%B7%BB%E5%8A%A0%E7%B2%98%E8%B4%B4%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E8%87%B3%E4%B8%83%E7%89%9B">hexo-admin-qiniu</a></p>
+<p>草稿<br>刚刚提到了 Hexo 的一种特殊布局：draft，这种布局在建立时会被保存到 source/_drafts 文件夹，您可通过 publish 命令将草稿移动到 source/_posts 文件夹，该命令的使用方式与 new 十分类似，您也可在命令中指定 layout 来指定布局。</p>
+<p>草稿默认不会显示在页面中，您可在执行时加上 –draft 参数，或是把 render_drafts 参数设为 true 来预览草稿。</p>
+<p>模版（Scaffold）<br>在新建文章时，Hexo 会根据 scaffolds 文件夹内相对应的文件来建立文件，例如：</p>
+<p>$ hexo new photo “My Gallery”<br>在执行这行指令时，Hexo 会尝试在 scaffolds 文件夹中寻找 photo.md，并根据其内容建立文章，以下是您可以在模版中使用的变量：</p>
+<p>变量    描述<br>layout    布局<br>title    标题<br>date    文件建立日期<br>支持的格式<br>Hexo 支持以任何格式书写文章，只要安装了相应的渲染插件。</p>
+<p>例如，Hexo 默认安装了 hexo-renderer-marked 和 hexo-renderer-ejs，因此你不仅可以用 Markdown 写作，你还可以用 EJS 写作。如果你安装了 hexo-renderer-pug，你甚至可以用 Pug 模板语言书写文章。</p>
+<p>只需要将文章的扩展名从 md 改成 ejs，Hexo 就会使用 hexo-renderer-ejs 渲染这个文件，其他格式同理。</p>
+]]></content>
+      <tags>
+        <tag>Demo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/12/15/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
